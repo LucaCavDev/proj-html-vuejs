@@ -65,6 +65,8 @@ button {
 }
 
 
+
+
 /* INIZIO STRUTTURA */
 header{
   height: 80px;
@@ -144,7 +146,7 @@ a:hover .fa-plus {
 }
 
 .jumbotron > img {
-  max-width: 100%;
+  width: 100%;   /*prima c'era max-width. layout rotto oltre i 2000px*/
   height: 100%;
 }
 

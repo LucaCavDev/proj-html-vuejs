@@ -2,7 +2,7 @@
 
 Aggiungere Header e Footer con VueJs creando una struttura dati che consenta di inserire i link nelle navbar
 
-ottimizzato per schermi di larghezza 1500px o più
+ottimizzato per schermi di larghezza tra 1500px e 2000px;
 
 */
 // _________________________________________________________
