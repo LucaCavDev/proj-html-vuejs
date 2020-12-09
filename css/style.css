@@ -7,24 +7,126 @@
 }
 
 #app {
-  background-color: red;
   min-height: 100vh;
   width: 100vw;
 }
-
+/* cose generiche */
 .whiteFont {
   color: #ffffff;
+}
+
+.balticSeaFont { /*nero*/
+  color: #1c1b21;
+}
+
+.bigStone { /*blu scuro*/
+  color: #1b304b;
 }
 
 .cyanFont {
   color: #00ddff;
 }
 
+.blackHazeB { /*grigino chiarisimo*/
+  background-color: #f6f7f7;
+}
 
+.dustyGrayFont {/*grigio scuro*/
+  color: #949494;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.fontSize50 {
+  font-size: 50px;
+}
+
+.fontSize40 {
+  font-size: 40px;
+}
+
+.fontSize30 {
+  font-size: 30px;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+.cyanbutton {
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background-color: #5ddecc;
+}
+
+
+/* INIZIO STRUTTURA */
 header{
   height: 80px;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.headerLeft {
+  width: 40%;
+  margin-left: 5%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerRight {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.headerRight ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.headerRight li {
+  height: 80px;
+}
+
+.headerRight a {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-decoration: none;
+}
+
+.headerRight a:hover {
+  color: #1b304b;
+  background-color: #f6f7f7;
+}
+
+.buttonHeaderContainer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+
+a:hover .fa-plus {
+  color: #1b304b;
+}
+
+/* ----------------------------------------------- */
 /*  1 planisfero right people  */
 .one {
 }
@@ -36,7 +138,7 @@ header{
 
 .jumbotron > img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .jumbotext {
@@ -47,7 +149,69 @@ header{
 }
 /* ----------------------------------------------- */
 /*  2 stisciolina grigina con 6 loghi  */
-/* ------------------------------------------------- */
+.two ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* ----------------------------------------------- */
+/*  3 cloud based finance  */
+.three {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerThree {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.boxLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textContainer3 {
+  width: 600px;
+  height: 457px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+.righina {
+  width: 100px;
+  border: #1b304b 1px solid;
+}
+
+
+.boxRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer3 * {
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------- */
+/*  4 specialty services  */
+.four {
+  background-color: #f6f7f7;
+}
+
+
+
+/* ----------------------------------------------- */
 /* FOOTER */
 footer {
   min-height: 200px;

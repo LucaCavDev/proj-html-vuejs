@@ -16,14 +16,51 @@
       <!-- nell'header metto solo la prima stisciolina bianca  -->
       <header>
 
+        <div class="headerLeft">
+          <a href="#">
+            <img :src="logoHeader" alt="">
+          </a>
+        </div>
+
+        <div class="headerRight">
+          <nav>
+
+            <ul>
+              <li v-for="item in arrayHeaderRight">
+                <a href="#" class="dustyGrayFont">
+                  <span>
+                    {{item}}
+                  </span>
+                </a>
+              </li>
+
+              <li class="buttonHeaderContainer">
+                <button type="button" name="button" class="whiteFont cyanbutton">
+                  {{buttonHeaderRight}}
+                </button>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-plus dustyGrayFont"></i>
+                </a>
+              </li>
+            </ul>
+
+            <div>
+            </div>
+
+          </nav>
+        </div>
+
       </header>
 
       <main>
         <!-- 1 planisfero right people -->
         <section class="one">
-          <div class="jumbotron">
+          <div class="jumbotron blackHazeB">
             <img src="img/home_finance_slider_bg.jpg" alt="">
-            <div class="jumbotext whiteFont">
+            <div class="jumbotext whiteFont fontSize50">
               Right People<span class="cyanFont">.</span> Right Investments<span class="cyanFont">.</span>
             </div>
           </div>
@@ -31,20 +68,77 @@
 
         <!-- 2 stisciolina grigina con 6 loghi -->
         <section class="two">
-          <ul>
+          <ul class="blackHazeB">
             <li>
-              <img src="img/home_finance_slider_bg.jpg" alt="">
+              <a href="#">
+                <img src="img/client-logo-7-200x87.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/client-logo-8-200x87.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/client-logo-9-200x87.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/client-logo-5-200x87.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/client-logo-6-200x87.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/client-logo-7-200x87.png" alt="">
+              </a>
             </li>
           </ul>
 
         </section>
         <!-- 3 cloud based finance -->
-        <section>
+        <section class="three">
+          <div class="containerThree">
+            <div class="boxLeft width50">
+              <div class="textContainer3">
 
+                <div class="sez3Title balticSeaFont fontSize40">
+                  Cloud Based Finance
+                </div>
+
+                <div class="righina">
+                </div>
+
+                <div class="sez3Subtitle dustyGrayFont">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <p>
+                    Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                  </p>
+                </div>
+                <div class="">
+                  <button type="button" name="button" class="cyanbutton whiteFont">LEARN MORE</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="boxRight width50">
+              <img src="img/graph-600x457.jpg" alt="">
+            </div>
+
+          </div>
         </section>
 
         <!-- 4 specialty services -->
-        <section>
+        <section class="four">
 
         </section>
         <!-- 5 making an impact -->
