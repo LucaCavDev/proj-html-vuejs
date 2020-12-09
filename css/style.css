@@ -226,7 +226,57 @@ a:hover .fa-plus {
   flex-direction: column;
   height: 250px;
 }
+/* ----------------------------------------------- */
+/* 7 i quattro quadrati (event elevate bonjour cafe...) */
+.seven {
+  border: 1px solid #949494;
+  height: 350px;
+}
 
+.seven * {
+  text-align: center;
+}
+
+.sec7top {
+  display: flex;
+  height: 70%;
+}
+
+.sec7bottom {
+  display: flex;
+  height: 30%;
+}
+
+.boxSection7 {
+  width: calc(100% / 4);
+  border-right: 1px solid #949494;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.boxSection7:last-child {
+  border-right: none;
+}
+.sec7andreRipetitivo {
+  width: calc(100% / 4);
+  border-right: 1px solid #949494;
+  border-top: 1px solid #949494;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec7andreRipetitivo:last-child {
+  border-right: none;
+}
+.sec7andreRipetitivo > div:first-child {
+  padding-bottom: 2px;
+}
+
+.sec7andreRipetitivo > div:last-child {
+  padding-top: 2px;
+}
+
+/* ----------------------------------------------- */
 
 /* 8 ready to talk */
 .jumbotext > div {
