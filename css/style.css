@@ -61,6 +61,7 @@ button {
   border: none;
   padding: 10px 20px 10px 20px;
   background-color: #5ddecc;
+  color: white;
 }
 
 
@@ -71,6 +72,11 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 .headerLeft {
@@ -129,6 +135,7 @@ a:hover .fa-plus {
 /* ----------------------------------------------- */
 /*  1 planisfero right people  */
 .one {
+  margin-top: 80px;
 }
 
 .jumbotron {
@@ -209,6 +216,11 @@ a:hover .fa-plus {
   background-color: #f6f7f7;
 }
 
+/* 8 ready to talk */
+
+.jumbotext > div {
+  margin-bottom: 20px;
+}
 
 
 /* ----------------------------------------------- */
