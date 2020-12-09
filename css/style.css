@@ -217,14 +217,21 @@ a:hover .fa-plus {
 .four {
   background-color: #f6f7f7;
 }
-
-/* 8 ready to talk */
-
-.jumbotext > div {
-  margin-bottom: 20px;
+/* ----------------------------------------------- */
+/* 6 client feedback */
+.six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
 }
 
 
+/* 8 ready to talk */
+.jumbotext > div {
+  margin-bottom: 20px;
+}
 /* ----------------------------------------------- */
 /* FOOTER */
 footer {
