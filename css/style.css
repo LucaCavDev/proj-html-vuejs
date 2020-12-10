@@ -21,7 +21,7 @@
 .balticSeaBackground { /*nero*/
   background-color: #1c1b21;
 }
-.blackBackground { /*non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito... quindi finche non risolvo uso un nero normale*/
+.blackBackground { /*non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito come mai quindi finche non risolvo uso un nero normale*/
   background-color: black;
 }
 
@@ -66,6 +66,13 @@ color: #4876b5;
   font-size: 30px;
 }
 
+.fontSize20 {
+  font-size: 20px;
+}
+
+.marginLeft20 {
+  margin-left: 20px;
+}
 
 .flexColumnCenterCenter {
   display: flex;
@@ -426,10 +433,10 @@ footer ul {
   justify-content: space-between;
   align-items: center;
 }
-.fBcLeft ul {
+.footerBcontainer ul {
   display: flex;
 }
 
-.fBcLeft li {
+.footerBcontainer li {
   margin-left: 5px;
 }

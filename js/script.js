@@ -12,12 +12,7 @@ var headerVue = new Vue ({
     logoHeader: "./img/finance_logo_1x.png",
     arrayHeaderRight: ['HOME', 'ABOUT', 'SERVICES', 'PACKAGES', 'INSIGHT'],
     buttonHeaderRight: "CONTACT"
-  },
-  methods: {
-
   }
-
-
 });
 
 var footerVue = new Vue ({
@@ -51,10 +46,10 @@ var footerVue = new Vue ({
     ],
 
     arrayFooterIcons: [
-      'fa.facebook-f',
+      'fa-facebook-f',
       'fa-twitter',
       'fa-youtube',
-      'fa-instagram' 
+      'fa-instagram'
     ]
 
 

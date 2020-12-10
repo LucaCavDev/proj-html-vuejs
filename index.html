@@ -309,7 +309,7 @@
         </section>
 
         <!-- 8 ready to talk -->
-        <section class="eight">
+        <section class="eight sharkBackground">
           <div class="jumbotron">
             <img src="img/ready_to_talk_cta_bg.jpg" alt="">
             <div class="jumbotext">
@@ -368,7 +368,9 @@
                 {{latest}}
               </div>
               <div class="">
-                {{uccellinoBlu}}
+                <a href="#">
+                  <i :class="`fab ${arrayFooterIcons[1]}`" class="cyanFont fontSize30"></i>
+                </a>
               </div>
             </div>
 
@@ -379,6 +381,7 @@
         <!-- B- copywright -->
         <section class="footerB blackBackground"><!-- non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito... quindi finche non risolvo uso un nero normale -->
           <div class="footerBcontainer">
+
             <div class="fBcLeft">
               <ul>
                 <li  class="dustyGrayFont">
@@ -389,7 +392,15 @@
                 </li>
               </ul>
             </div>
+
             <div class="fBcRight">
+              <ul>
+                <li v-for="iconClass in arrayFooterIcons">
+                  <a href="#">
+                    <i :class="`fab ${iconClass}`" class="whiteFont fontSize20 marginLeft"></i>
+                  </a>
+                </li>
+              </ul>
 
             </div>
 
