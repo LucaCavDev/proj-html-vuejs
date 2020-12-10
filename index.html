@@ -30,11 +30,11 @@
                 <!-- @click="dropDownFunction(index)" -->
                 <a href="#" class="dustyGrayFont">
                   <span>
-                    {{item.title}}
+                    {{item.title}} {{item.aperto}}
                   </span>
                 </a>
-
-                <div class="blackHazeBackgroundackground dropdown">
+<!-- ternario  -->
+                <div class="blackHazeBackgroundackground dropdown" :class=""  >
                   <ul class="dropdownUl">
                     <li v-for="littleMenu in item.drop">
                       <a href="#">

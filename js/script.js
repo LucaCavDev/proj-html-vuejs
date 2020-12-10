@@ -35,11 +35,13 @@ var headerVue = new Vue ({
 
   methods: {
     dropDownFunction(index) {
-      if (this.arrayHeaderRight.item.aperto == false) {
-        document.getElementById('target').style.display = 'block';
+      if (this.arrayHeaderRight[index].aperto == false) {
+        this.arrayHeaderRight[index].aperto = true;
+      } else {
+        this.arrayHeaderRight[index].aperto = false;
       }
     }
-  };
+  }
 
 
 });
