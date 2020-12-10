@@ -216,6 +216,11 @@ a:hover .fa-plus {
 /*  4 specialty services  */
 .four {
   background-color: #f6f7f7;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* ----------------------------------------------- */
 /* 5 making an impact */
@@ -252,6 +257,17 @@ a:hover .fa-plus {
   transform: translate(-50%, -50%);
 }
 
+.sec5right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec5Rcontainer {
+  width: 90%;
+  height: 90%;
+  background-color: red;
+}
 
 /* ----------------------------------------------- */
 /* 6 client feedback */
@@ -261,6 +277,10 @@ a:hover .fa-plus {
   align-items: center;
   flex-direction: column;
   height: 250px;
+}
+
+.six > div {
+  margin: 10px;
 }
 /* ----------------------------------------------- */
 /* 7 i quattro quadrati (event elevate bonjour cafe...) */
