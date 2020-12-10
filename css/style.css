@@ -93,8 +93,24 @@ button {
   color: white;
 }
 
+.dropitem {
+  position: relative;
+}
 
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  min-width: 150%;
+}
+.dropdownUl {
+  display: flex;
+  flex-direction: column;
+}
 
+.hiddendiv {display:none;}
+.visiblediv {display:block;}
 
 /* INIZIO STRUTTURA */
 header{
@@ -115,7 +131,7 @@ header{
   margin-left: 5%;
 }
 
-header nav {
+.headerRight > nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -437,6 +453,10 @@ footer ul {
   display: flex;
 }
 
-.footerBcontainer li {
+.fBcLeft li {
   margin-left: 5px;
+}
+
+.fBcRight li {
+  margin-left: 30px;
 }

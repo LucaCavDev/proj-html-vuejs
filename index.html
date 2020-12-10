@@ -26,12 +26,27 @@
           <nav>
 
             <ul>
-              <li v-for="item in arrayHeaderRight">
+              <li v-for="(item, index) in arrayHeaderRight" class="dropitem" @click="dropDownFunction(index)">
+                <!-- @click="dropDownFunction(index)" -->
                 <a href="#" class="dustyGrayFont">
                   <span>
-                    {{item}}
+                    {{item.title}}
                   </span>
                 </a>
+
+                <div class="blackHazeBackgroundackground dropdown">
+                  <ul class="dropdownUl">
+                    <li v-for="littleMenu in item.drop">
+                      <a href="#">
+                        <span class="dustyGrayFont">
+                          {{littleMenu}}
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+
               </li>
 
               <li class="buttonHeaderContainer">

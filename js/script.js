@@ -10,9 +10,38 @@ var headerVue = new Vue ({
   el: '#headerVue',
   data: {
     logoHeader: "./img/finance_logo_1x.png",
-    arrayHeaderRight: ['HOME', 'ABOUT', 'SERVICES', 'PACKAGES', 'INSIGHT'],
+    arrayHeaderRight: [
+      {
+        title: 'HOME'
+      },
+      {
+        title: 'ABOUT'
+      },
+      {
+        title: 'SERVICES ↓',
+        drop: ['Pulizia del portafoglio', 'Schemi piramidali', 'Saluti e baci', 'Traslochi'],
+        aperto: false
+      },
+      {
+        title: 'PACKAGES'
+      },
+      {
+        title: 'INSIGHT'
+      }
+    ],
+
     buttonHeaderRight: "CONTACT"
-  }
+  },
+
+  methods: {
+    dropDownFunction(index) {
+      if (this.arrayHeaderRight.item.aperto == false) {
+        document.getElementById('target').style.display = 'block';
+      }
+    }
+  };
+
+
 });
 
 var footerVue = new Vue ({
