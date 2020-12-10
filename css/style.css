@@ -18,6 +18,17 @@
 .balticSeaFont { /*nero*/
   color: #1c1b21;
 }
+.balticSeaBackground { /*nero*/
+  background-color: #1c1b21;
+}
+.blackBackground { /*non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito... quindi finche non risolvo uso un nero normale*/
+  background-color: black;
+}
+
+.sharkBackground { /*quasi nero*/
+  background-color: #19191f;
+}
+
 
 .bigStone { /*blu scuro*/
   color: #1b304b;
@@ -27,12 +38,16 @@
   color: #00ddff;
 }
 
-.blackHazeB { /*grigino chiarisimo*/
+.blackHazeBackgroundackground { /*grigino chiarisimo*/
   background-color: #f6f7f7;
 }
 
 .dustyGrayFont {/*grigio scuro*/
   color: #949494;
+}
+
+.steelBlueFont {/*blue meno scuro di bigstone*/
+color: #4876b5;
 }
 
 .width50 {
@@ -51,6 +66,13 @@
   font-size: 30px;
 }
 
+
+.flexColumnCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 button {
   cursor: pointer;
@@ -266,16 +288,27 @@ a:hover .fa-plus {
 .sec5Rcontainer {
   width: 90%;
   height: 90%;
-  background-color: red;
+}
+
+.sec5rTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.sec5rbottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
 }
 
 /* ----------------------------------------------- */
 /* 6 client feedback */
 .six {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 250px;
 }
 
@@ -313,6 +346,12 @@ a:hover .fa-plus {
 .boxSection7:last-child {
   border-right: none;
 }
+
+.sec7text {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .sec7andreRipetitivo {
   width: calc(100% / 4);
   border-right: 1px solid #949494;
@@ -341,6 +380,56 @@ a:hover .fa-plus {
 /* ----------------------------------------------- */
 /* FOOTER */
 footer {
-  min-height: 200px;
-  background-color: black;
+  height: 400px;
+}
+
+footer ul {
+  list-style: none;
+}
+.footerA {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fAcontainer {
+  display: flex;
+  height: 70%;
+  width: 90%;
+}
+
+.fAcontainer > div {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.fAcontainer * {
+  margin-bottom: 15px;
+}
+
+
+.footerB {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerBcontainer {
+  width: 90%;
+}
+
+.footerBcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fBcLeft ul {
+  display: flex;
+}
+
+.fBcLeft li {
+  margin-left: 5px;
 }

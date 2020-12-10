@@ -58,7 +58,7 @@
       <main>
         <!-- 1 planisfero right people -->
         <section class="one">
-          <div class="jumbotron blackHazeB">
+          <div class="jumbotron blackHazeBackground">
             <img src="img/home_finance_slider_bg.jpg" alt="">
             <div class="jumbotext whiteFont fontSize50">
               Right People<span class="cyanFont">.</span> Right Investments<span class="cyanFont">.</span>
@@ -68,7 +68,7 @@
 
         <!-- 2 stisciolina grigina con 6 loghi -->
         <section class="two">
-          <ul class="blackHazeB">
+          <ul class="blackHazeBackground">
             <li>
               <a href="#">
                 <img src="img/client-logo-7-200x87.png" alt="">
@@ -137,7 +137,7 @@
           </div>
         </section>
 
-        <!-- 4 specialty services -->
+        <!-- 4 specialty services -->        <!--  UNICO________________________________-MANCANTE -->
         <section class="four">
         </section>
         <!-- 5 making an impact -->
@@ -162,43 +162,43 @@
 
             <div class="sec5Rcontainer">
 
-              <div class="5rTop">
+              <div class="sec5rTop">
 
-                <div class="5rTleft">
-                  <div class="">
+                <div class="sec5rTleft flexColumnCenterCenter">
+                  <div class="steelBlueFont fontSize50">
                     86%
                   </div>
-                  <div class="">
+                  <div class="dustyGrayFont">
                     Successful Applications
                   </div>
                 </div>
 
-                <div class="5rTright">
-                  <div class="">
+                <div class="sec5rTright flexColumnCenterCenter">
+                  <div class="steelBlueFont fontSize50">
                     94%
                   </div>
-                  <div class="">
+                  <div class="dustyGrayFont">
                     Return On Investment
                   </div>
                 </div>
 
               </div>
 
-              <div class="5rbottom">
+              <div class="sec5rbottom">
 
-                <div class="5rBleft">
-                  <div class="">
+                <div class="sec5rBleft flexColumnCenterCenter">
+                  <div class="steelBlueFont fontSize50">
                     92%
                   </div>
-                  <div class="">
+                  <div class="dustyGrayFont">
                     Applied Solutions
                   </div>
                 </div>
-                <div class="5rBright">
-                  <div class="">
+                <div class="sec5rBright flexColumnCenterCenter">
+                  <div class="steelBlueFont fontSize50">
                     100%
                   </div>
-                  <div class="">
+                  <div class="dustyGrayFont">
                     Completely Secure
                   </div>
                 </div>
@@ -213,7 +213,7 @@
         </section>
 
         <!-- 6 client feedback -->
-        <section class="six blackHazeB">
+        <section class="six blackHazeBackground flexColumnCenterCenter">
           <div class="balticSeaFont fontSize40">
             Client Feedback
           </div>
@@ -331,12 +331,73 @@
       <!-- nel footer metto le ultime due sezioni( grigiascura - nera) -->
       <footer id="footerVue">
         <!-- A- Avada Finance -->
-        <section>
+        <section class="footerA sharkBackground">
+
+          <div class="fAcontainer">
+
+            <div class="fAlogo">
+              <a href="#">
+                <img :src="logoFooter" alt="">
+              </a>
+            </div>
+
+            <div class="fArecentPost">
+              <div class="whiteFont">
+                {{recentPosts}}
+              </div>
+              <ul>
+                <li v-for='item in arrayRecentPosts' class="dustyGrayFont">
+                  {{item}}
+                </li>
+              </ul>
+            </div>
+
+            <div class="fAservices">
+              <div class="whiteFont">
+                {{services}}
+              </div>
+              <ul>
+                <li v-for='item in arrayServices' class="dustyGrayFont">
+                  {{item}}
+                </li>
+              </ul>
+            </div>
+
+            <div class="fAlatest">
+              <div class="whiteFont">
+                {{latest}}
+              </div>
+              <div class="">
+                {{uccellinoBlu}}
+              </div>
+            </div>
+
+          </div>
 
         </section>
 
         <!-- B- copywright -->
-        <section>
+        <section class="footerB blackBackground"><!-- non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito... quindi finche non risolvo uso un nero normale -->
+          <div class="footerBcontainer">
+            <div class="fBcLeft">
+              <ul>
+                <li  class="dustyGrayFont">
+                  &copy; Copyright 2012
+                </li>
+                <li v-for='item in arrayCopyright' class="dustyGrayFont">
+                  {{item}}
+                </li>
+              </ul>
+            </div>
+            <div class="fBcRight">
+
+            </div>
+
+
+          </div>
+
+
+
 
         </section>
       </footer>
