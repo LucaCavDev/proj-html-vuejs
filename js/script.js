@@ -19,7 +19,12 @@ var headerVue = new Vue ({
       },
       {
         title: 'SERVICES ↓',
-        drop: ['Pulizia del portafoglio', 'Schemi piramidali', 'Saluti e baci', 'Traslochi'],
+        drop: [
+          'Pulizie',
+          'Coccole',
+          'Saluti e baci',
+          'Traslochi'
+        ],
         aperto: false
       },
       {
@@ -34,7 +39,7 @@ var headerVue = new Vue ({
   },
 
   methods: {
-    dropDownFunction(index) {
+    dropDownFunction: function(index) {
       if (this.arrayHeaderRight[index].aperto == false) {
         this.arrayHeaderRight[index].aperto = true;
       } else {
