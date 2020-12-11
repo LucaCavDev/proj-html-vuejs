@@ -5,14 +5,20 @@
   font-family: 'Signika', sans-serif;
   font-size: 15px;
 }
+/* font-family: 'Signika', sans-serif;
+
+font-family: 'Lora', serif; */
 
 #sitoWeb {
-  min-height: 100vh;
   width: 100vw;
+  height: 100vh;
+  max-width:100%;
 }
 
 /* cose generiche */
-
+.fontFamilyLora {
+  font-family: 'Lora', serif;
+}
 /* COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 .whiteFont {
   color: #ffffff;
@@ -22,12 +28,12 @@
   color: #1c1b21;
 }
 
-.balticSeaBackground { /*nero*/
+.balticSeaBackground { /*nero? non sembra*/
   background-color: #1c1b21;
 }
 
 .blackBackground { /*non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito come mai quindi finche non risolvo uso un nero normale*/
-  background-color: black;
+  background-color: #121316;
 }
 
 .sharkBackground { /*quasi nero*/
