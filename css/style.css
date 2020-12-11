@@ -88,6 +88,10 @@ a {
 .fontSize20 {
   font-size: 20px;
 }
+.fontSize15 {
+  font-size: 15px;
+}
+
 
 .marginLeft20 {
   margin-left: 20px;
@@ -590,4 +594,30 @@ footer ul {
 
 .fa-stack-1x:hover {
   color: #1b304b;
+}
+
+/* FINE FO0TER -------------------------------------------------------*/
+/* ARROW FIXED */
+.backToStartBigContainer {
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+}
+
+.backToStartLittleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  width: 50px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.1;
+  border: 2px solid;
+}
+
+.backToStartLittleContainer:hover {
+  opacity: 1;
+  border: 2px solid #5ddecc;
 }

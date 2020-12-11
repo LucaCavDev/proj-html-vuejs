@@ -1,9 +1,5 @@
 /*
-
-Aggiungere Header e Footer con VueJs creando una struttura dati che consenta di inserire i link nelle navbar
-
 ottimizzato per schermi di larghezza tra 1500px e 2200px;
-
 */
 // _________________________________________________________
 var headerVue = new Vue ({
@@ -87,11 +83,14 @@ var footerVue = new Vue ({
       'fa-youtube',
       'fa-instagram'
     ]
-
-
-    // <i class="fab fa-facebook-f"></i>
-    //<i class="fab fa-twitter"></i>
-    //<i class="fab fa-youtube"></i>
-    //<i class="fab fa-instagram"></i>
   }
-})
+});
+
+// var sitoWeb = new Vue ({
+//   el: '#sitoWeb',
+//   methods: {
+//     backToStart: function() {
+//       window.scrollTo(0,0);
+//     }
+//   }
+// });

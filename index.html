@@ -485,9 +485,9 @@
               <ul>
                 <li v-for="iconClass in arrayFooterIcons">
                   <a href="#">
-                    <span class="fa-stack fa-2x">
+                    <span class="fa-stack fa-1x">
                       <i class="fas fa-circle fa-stack-2x"></i>
-                      <i :class="`fab ${iconClass}`" class="whiteFont fontSize20 marginLeft fa-stack-1x"></i>
+                      <i :class="`fab ${iconClass}`" class="whiteFont fontSize15 marginLeft fa-stack-1x"></i>
                     </span>
                   </a>
                 </li>
@@ -500,6 +500,14 @@
 
         </section>
       </footer>
+
+      <!-- back to the start of the page -->
+      <!-- <div class="backToStartBigContainer">
+        <div class="backToStartLittleContainer blackHazeBackground" @click="backToStart()">
+          <i class="fas fa-chevron-up balticSeaFont"></i>
+        </div>
+      </div> -->
+
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
