@@ -11,6 +11,8 @@
   width: 100vw;
 }
 /* cose generiche */
+
+/* COLORsssssssssssssssSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 .whiteFont {
   color: #ffffff;
 }
@@ -28,7 +30,6 @@
 .sharkBackground { /*quasi nero*/
   background-color: #19191f;
 }
-
 
 .bigStone { /*blu scuro*/
   color: #1b304b;
@@ -49,6 +50,9 @@
 .steelBlueFont {/*blue meno scuro di bigstone*/
 color: #4876b5;
 }
+
+/* FINE COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
 
 .width50 {
   width: 50%;
@@ -290,12 +294,81 @@ background-color: #5ddecc;
 /*  4 specialty services  */
 .four {
   background-color: #f6f7f7;
-  height: 400px;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.secFourContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secFourTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+}
+
+.secFourTop > div {
+  margin-bottom: 20px;
+}
+.sez4Subtitle {
+  text-align: center;
+}
+
+.secFourBottom {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.secFourBox {
+  height: 350px;
+  position: relative;
+}
+
+.secFourBox:nth-child(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.secFourBoxTop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secFourBoxTop1on3 > i {
+  color: #426ead;
+  font-size: 50px;
+}
+.secFourBoxTop2on3 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.secFourBoxTop3on3 {
+  text-align: center;
+  line-height: 200%;
+  color: #949494;
+}
+
+.secFourBoxBottom > button {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #00ddff;
+  color: white;
+}
+
+
 /* ----------------------------------------------- */
 /* 5 making an impact */
 .five {
