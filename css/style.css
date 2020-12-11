@@ -12,7 +12,7 @@
 }
 /* cose generiche */
 
-/* COLORsssssssssssssssSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 .whiteFont {
   color: #ffffff;
 }
@@ -20,9 +20,11 @@
 .balticSeaFont { /*nero*/
   color: #1c1b21;
 }
+
 .balticSeaBackground { /*nero*/
   background-color: #1c1b21;
 }
+
 .blackBackground { /*non so perche ma baltic sea background viene piu chiaro di quello che dovrebbe tenendo conto che ho anche un file con i colori da confrontare non ho capito come mai quindi finche non risolvo uso un nero normale*/
   background-color: black;
 }
@@ -39,7 +41,7 @@
   color: #00ddff;
 }
 
-.blackHazeBackgroundackground { /*grigino chiarisimo*/
+.blackHazeBackground { /*grigino chiarisimo*/
   background-color: #f6f7f7;
 }
 
@@ -87,16 +89,22 @@ color: #4876b5;
 
 button {
   cursor: pointer;
+  border: 2px solid #5ddecc;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px solid #5ddecc;
+  color: #5ddecc;
 }
 
 .cyanbutton {
   border-radius: 50px;
-  border: none;
   padding: 10px 20px 10px 20px;
   background-color: #5ddecc;
   color: white;
 }
-/* INIZIO STRUTTURA */
+/* INIZIO STRUTTURA --------------------------------------------------------------------*/
 header{
   height: 80px;
   background-color: #ffffff;
@@ -165,11 +173,9 @@ header{
   width: 100px;
 }
 
-
 a:hover .fa-plus {
   color: #1b304b;
 }
-
 
 .dropitem {
   position: relative;
@@ -182,7 +188,6 @@ a:hover .fa-plus {
   left: 0px;
   min-width: 150px;
 }
-
 
 .dropdownUl {
   display: flex;
@@ -200,9 +205,8 @@ background-color: #5ddecc;
 
 
 .dropdownLi:hover .dropdownA {
-  color: #1c1b21;
+  color: #1b304b;
 }
-
 
 .dropdownA {
   margin-left: 20px;
@@ -276,7 +280,7 @@ background-color: #5ddecc;
 
 .righina {
   width: 100px;
-  border: #1b304b 1px solid;
+  border-top: #1b304b 2px solid;
 }
 
 
@@ -313,6 +317,7 @@ background-color: #5ddecc;
   align-items: center;
   flex-direction: column;
   width: 65%;
+  margin-top: 50px;
 }
 
 .secFourTop > div {
@@ -331,6 +336,7 @@ background-color: #5ddecc;
 .secFourBox {
   height: 350px;
   position: relative;
+  background-color: white;
 }
 
 .secFourBox:nth-child(2) {
@@ -343,6 +349,12 @@ background-color: #5ddecc;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+}
+
+.secFourBoxTop > div {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .secFourBoxTop1on3 > i {
@@ -360,12 +372,14 @@ background-color: #5ddecc;
   color: #949494;
 }
 
-.secFourBoxBottom > button {
+.secFourBoxBottomButton {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  background-color: #00ddff;
+  background-color: #5ddecc;
   color: white;
+  border: none;
+  height: 50px;
 }
 
 
@@ -393,7 +407,7 @@ background-color: #5ddecc;
 
 .sec5left {
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -443,7 +457,7 @@ background-color: #5ddecc;
 /* ----------------------------------------------- */
 /* 7 i quattro quadrati (event elevate bonjour cafe...) */
 .seven {
-  border: 1px solid #949494;
+  border: 1px solid #f6f7f7;
   height: 350px;
 }
 
@@ -463,7 +477,7 @@ background-color: #5ddecc;
 
 .boxSection7 {
   width: calc(100% / 4);
-  border-right: 1px solid #949494;
+  border-right: 1px solid #f6f7f7;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -479,8 +493,8 @@ background-color: #5ddecc;
 
 .sec7andreRipetitivo {
   width: calc(100% / 4);
-  border-right: 1px solid #949494;
-  border-top: 1px solid #949494;
+  border-right: 1px solid #f6f7f7;
+  border-top: 1px solid #f6f7f7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -505,14 +519,14 @@ background-color: #5ddecc;
 /* ----------------------------------------------- */
 /* FOOTER */
 footer {
-  height: 400px;
+  height: 350px;
 }
 
 footer ul {
   list-style: none;
 }
 .footerA {
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,8 +534,8 @@ footer ul {
 
 .fAcontainer {
   display: flex;
-  height: 70%;
   width: 90%;
+  padding-top: 50px;
 }
 
 .fAcontainer > div {
