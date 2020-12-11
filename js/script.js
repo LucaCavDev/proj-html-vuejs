@@ -2,8 +2,8 @@
 ottimizzato per schermi di larghezza tra 1500px e 2200px;
 */
 // _________________________________________________________
-var headerVue = new Vue ({
-  el: '#headerVue',
+var sitoWeb = new Vue ({
+  el: '#sitoWeb',
   data: {
     logoHeader: "./img/finance_logo_1x.png",
     arrayHeaderRight: [
@@ -31,25 +31,8 @@ var headerVue = new Vue ({
       }
     ],
 
-    buttonHeaderRight: "CONTACT"
-  },
-
-  methods: {
-    dropDownFunction: function(index) {
-      if (this.arrayHeaderRight[index].aperto == false) {
-        this.arrayHeaderRight[index].aperto = true;
-      } else {
-        this.arrayHeaderRight[index].aperto = false;
-      }
-    }
-  }
-
-
-});
-
-var footerVue = new Vue ({
-  el: '#footerVue',
-  data: {
+    buttonHeaderRight: "CONTACT",
+    // footer
     logoFooter: "./img/finance_logo_footer-200x131.png",
     recentPosts: "RECENT POSTS",
     arrayRecentPosts: [
@@ -65,7 +48,6 @@ var footerVue = new Vue ({
     ],
     latest: "LATEST",
     uccellinoBlu: 'piccoloUccellodiSuccesso',
-
     arrayCopyright: [
       '-',
       '2020',
@@ -76,21 +58,30 @@ var footerVue = new Vue ({
       '|',
       'Powered by WordPress'
     ],
-
     arrayFooterIcons: [
       'fa-facebook-f',
       'fa-twitter',
       'fa-youtube',
       'fa-instagram'
     ]
+  },
+
+  methods: {
+    // header
+    dropDownFunction: function(index) {
+      if (this.arrayHeaderRight[index].aperto == false) {
+        this.arrayHeaderRight[index].aperto = true;
+      } else {
+        this.arrayHeaderRight[index].aperto = false;
+      }
+    },
+    // sotto footer
+    backToStart: function() {
+      // window.scrollTo(0,0);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
   }
 });
-
-// var sitoWeb = new Vue ({
-//   el: '#sitoWeb',
-//   methods: {
-//     backToStart: function() {
-//       window.scrollTo(0,0);
-//     }
-//   }
-// });
