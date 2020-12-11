@@ -1,5 +1,5 @@
 /*
-ottimizzato per schermi di larghezza tra 1500px e 2200px;
+ottimizzato per schermi di larghezza tra 1200px e 2200px;
 */
 // _________________________________________________________
 var sitoWeb = new Vue ({

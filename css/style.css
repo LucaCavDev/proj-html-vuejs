@@ -308,6 +308,8 @@ background-color: #5ddecc;
 }
 
 /* ----------------------------------------------- */
+
+
 /*  4 specialty services  */
 .four {
   background-color: #f6f7f7;
@@ -597,7 +599,8 @@ footer ul {
 }
 
 /* FINE FO0TER -------------------------------------------------------*/
-/* ARROW FIXED */
+
+/* div per funzione tornaSu! */
 .backToStartBigContainer {
   position: fixed;
   bottom: 0px;
@@ -620,4 +623,20 @@ footer ul {
 .backToStartLittleContainer:hover {
   opacity: 1;
   border: 2px solid #5ddecc;
+}
+/* sistemare il responsive tra 1200 e 1500 */
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .textContainer3 {
+    margin-right: 100px;
+  }
+
+  .secFourBoxTop3on3 {
+    line-height: 150%;
+  }
+
+  .secFourBoxTop div:nth-child(2){
+    font-size: 20px;
+  }
+
+
 }
