@@ -425,7 +425,9 @@
               </div>
               <ul>
                 <li v-for='item in arrayRecentPosts' class="dustyGrayFont">
-                  {{item}}
+                  <a href="#" class="dustyGrayFont">
+                    {{item}}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -435,8 +437,10 @@
                 {{services}}
               </div>
               <ul>
-                <li v-for='item in arrayServices' class="dustyGrayFont">
-                  {{item}}
+                <li v-for='item in arrayServices'>
+                  <a href="#" class="dustyGrayFont">
+                    {{item}}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -465,8 +469,10 @@
                 <li  class="dustyGrayFont">
                   &copy; Copyright 2012
                 </li>
-                <li v-for='item in arrayCopyright' class="dustyGrayFont">
-                  {{item}}
+                <li v-for='item in arrayCopyright'>
+                  <a href="#" class="dustyGrayFont">
+                    {{item}}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -475,7 +481,10 @@
               <ul>
                 <li v-for="iconClass in arrayFooterIcons">
                   <a href="#">
-                    <i :class="`fab ${iconClass}`" class="whiteFont fontSize20 marginLeft"></i>
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i :class="`fab ${iconClass}`" class="whiteFont fontSize20 marginLeft fa-stack-1x"></i>
+                    </span>
                   </a>
                 </li>
               </ul>

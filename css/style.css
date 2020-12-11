@@ -10,6 +10,7 @@
   min-height: 100vh;
   width: 100vw;
 }
+
 /* cose generiche */
 
 /* COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -54,7 +55,9 @@ color: #4876b5;
 }
 
 /* FINE COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-
+a {
+  text-decoration: none;
+}
 
 .width50 {
   width: 50%;
@@ -70,6 +73,10 @@ color: #4876b5;
 
 .fontSize30 {
   font-size: 30px;
+}
+
+.fontSize25 {
+  font-size: 25px;
 }
 
 .fontSize20 {
@@ -146,10 +153,6 @@ header{
 
 .headerRight li {
   height: 80px;
-}
-
-.headerRight a {
-  text-decoration: none;
 }
 
 .headerRight-main-a {
@@ -499,9 +502,11 @@ background-color: #5ddecc;
   flex-direction: column;
   justify-content: center;
 }
+
 .sec7andreRipetitivo:last-child {
   border-right: none;
 }
+
 .sec7andreRipetitivo > div:first-child {
   padding-bottom: 2px;
 }
@@ -573,6 +578,10 @@ footer ul {
   margin-left: 5px;
 }
 
-.fBcRight li {
-  margin-left: 30px;
+.fa-stack-2x {
+  color: #5ddecc;
+}
+
+.fa-stack-1x:hover {
+  color: #1b304b;
 }
