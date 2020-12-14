@@ -29,7 +29,7 @@
             <ul>
 
               <li v-for="(item, index) in arrayHeaderRight" class="dropitem" @click="dropDownFunction(index)">
-                <a href="#" class="dustyGrayFont headerRight-main-a">
+                <a :href="item.link" class="dustyGrayFont headerRight-main-a">
                   <span>
                     {{item.title}} <!-- {{item.aperto}} -->
                   </span>

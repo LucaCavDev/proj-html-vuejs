@@ -8,10 +8,12 @@ var sitoWeb = new Vue ({
     logoHeader: "./img/finance_logo_1x.png",
     arrayHeaderRight: [
       {
-        title: 'HOME'
+        title: 'HOME',
+        link: 'https://it.wikipedia.org/wiki/Home'
       },
       {
-        title: 'ABOUT'
+        title: 'ABOUT',
+        link: 'https://en.wikipedia.org/wiki/Wikipedia:About'
       },
       {
         title: 'SERVICES ↓',
@@ -24,10 +26,12 @@ var sitoWeb = new Vue ({
         aperto: false
       },
       {
-        title: 'PACKAGES'
+        title: 'PACKAGES',
+        link: 'https://en.wikipedia.org/wiki/Packing_(phallus)'
       },
       {
-        title: 'INSIGHT'
+        title: 'INSIGHT',
+        link: 'https://it.wikipedia.org/wiki/Insight'
       }
     ],
 
