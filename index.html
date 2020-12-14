@@ -430,7 +430,7 @@
               <ul>
                 <li v-for='item in arrayRecentPosts' class="dustyGrayFont">
                   <a href="#" class="dustyGrayFont">
-                    {{item}}
+                    {{'> ' + item}}
                   </a>
                 </li>
               </ul>
@@ -443,7 +443,7 @@
               <ul>
                 <li v-for='item in arrayServices'>
                   <a href="#" class="dustyGrayFont">
-                    {{item}}
+                    {{'> ' + item}}
                   </a>
                 </li>
               </ul>
@@ -470,12 +470,15 @@
 
             <div class="fBcLeft">
               <ul>
-                <li  class="dustyGrayFont">
-                  &copy; Copyright 2012
+                <li class="dustyGrayFont">
+                  &copy; Copyright 2012 -
+                </li>
+                <li class="dustyGrayFont">
+                  {{annoCorrente}}
                 </li>
                 <li v-for='item in arrayCopyright'>
                   <a href="#" class="dustyGrayFont">
-                    {{item}}
+                    {{'| ' + item}}
                   </a>
                 </li>
               </ul>

@@ -183,7 +183,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
 }
 
 a:hover .fa-plus {
