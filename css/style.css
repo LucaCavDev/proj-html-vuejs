@@ -464,6 +464,11 @@ background-color: #5ddecc;
   height: 50%;
 }
 
+.bigNumbers:hover {
+  font-size: 80px;
+  color: red;
+}
+
 /* ----------------------------------------------- */
 /* 6 client feedback */
 .six {
