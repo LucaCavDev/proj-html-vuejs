@@ -15,7 +15,7 @@
   <body>
     <div id="sitoWeb">
       <!-- nell'header metto solo la prima stisciolina bianca  -->
-      <header id="headerVue">
+      <header id="headerVue" class="boxShadow">
 
         <div class="headerLeft">
           <a href="#">
@@ -36,7 +36,7 @@
                 </a>
 
                 <div class="blackHazeBackground dropdown" :class="item.aperto == true ? 'visiblediv': null">
-                  <ul class="dropdownUl">
+                  <ul class="dropdownUl boxShadow">
                     <li v-for="littleMenu in item.drop" class="dustyGrayFont dropdownLi">
                       <a href="#" class="dustyGrayFont dropdownA">
                         {{littleMenu}}
@@ -165,7 +165,7 @@
 
             <div class="secFourBottom">
               <!-- box1/3 -->
-              <div class="secFourBox">
+              <div class="secFourBox boxShadow">
                 <div class="secFourBoxTop">
                   <div class="secFourBoxTop1on3">
                     <i class="fas fa-globe"></i>
@@ -182,7 +182,7 @@
                 </div>
               </div>
               <!-- 2/3 -->
-              <div class="secFourBox">
+              <div class="secFourBox boxShadow">
                 <div class="secFourBoxTop">
                   <div class="secFourBoxTop1on3">
                     <i class="fas fa-gem"></i>
@@ -199,7 +199,7 @@
                 </div>
               </div>
               <!-- 3/3 -->
-              <div class="secFourBox">
+              <div class="secFourBox boxShadow">
                 <div class="secFourBoxTop">
                   <div class="secFourBoxTop1on3">
                     <i class="fas fa-chart-line"></i>

@@ -19,6 +19,10 @@ font-family: 'Lora', serif; */
 .fontFamilyLora {
   font-family: 'Lora', serif;
 }
+
+.boxShadow {
+  box-shadow: 1px 1px 10px 1px #1b304b;
+}
 /* COLORSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 .whiteFont {
   color: #ffffff;
